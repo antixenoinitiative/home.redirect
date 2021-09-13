@@ -10,4 +10,4 @@ http.createServer(function (req, res) {
         res.writeHead(302, { "Location": "http://www.antixenoinitiative.com" + req.url });
         return res.end();
     }
-}).listen(8085);
+}).listen(process.env.PORT);
